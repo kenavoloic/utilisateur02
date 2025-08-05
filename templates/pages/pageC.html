@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Page C - Mon Projet{% endblock %}
+
+{% block header %}Page C{% endblock %}
+
+{% block content %}
+<p>Bienvenue sur la <strong>Page C</strong> !</p>
+
+<div style="background: #fff3e0; padding: 15px; border-radius: 4px; margin: 20px 0;">
+	<h4>Contenu spécifique à la Page C</h4>
+	<p>Cette page peut contenir encore d'autres fonctionnalités.</p>
+</div>
+
+<p><a href="{% url 'pages:accueil' %}">← Retour à l'accueil</a></p>
+{% endblock %}
+

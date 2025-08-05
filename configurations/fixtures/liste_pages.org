@@ -1,0 +1,46 @@
+
+
+#+NAME: liste
+| nom  | libelle  | nom_url    |
+|------+----------+------------|
+| p001 | un       | pages:p001 |
+| p002 | deux     | pages:p002 |
+| p003 | trois    | pages:p003 |
+| p004 | quatre   | pages:p004 |
+| p005 | cinq     | pages:p005 |
+| p006 | six      | pages:p006 |
+| p007 | sept     | pages:p007 |
+| p008 | huit     | pages:p008 |
+| p009 | neuf     | pages:p009 |
+| p010 | dix      | pages:p010 |
+| p011 | onze     | pages:p011 |
+| p012 | douze    | pages:p012 |
+| p013 | treize   | pages:p013 |
+| p014 | quatorze | pages:p014 |
+| p015 | quinze   | pages:p015 |
+| p016 | seize    | pages:p016 |
+|------+----------+------------|
+
+:PROPERTIES:
+:TABLE_EXPORT_FILE: test.csv
+:TABLE_EXPORT_FORMAT: orgtbl-to-csv
+:END:
+| nom  | libelle  | nom_url    |
+|------+----------+------------|
+| p001 | un       | pages:p001 |
+| p002 | deux     | pages:p002 |
+| p003 | trois    | pages:p003 |
+| p004 | quatre   | pages:p004 |
+| p005 | cinq     | pages:p005 |
+| p006 | six      | pages:p006 |
+| p007 | sept     | pages:p007 |
+| p008 | huit     | pages:p008 |
+| p009 | neuf     | pages:p009 |
+| p010 | dix      | pages:p010 |
+| p011 | onze     | pages:p011 |
+| p012 | douze    | pages:p012 |
+| p013 | treize   | pages:p013 |
+| p014 | quatorze | pages:p014 |
+| p015 | quinze   | pages:p015 |
+| p016 | seize    | pages:p016 |
+|------+----------+------------|

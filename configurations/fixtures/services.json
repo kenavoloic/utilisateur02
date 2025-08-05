@@ -1,0 +1,23 @@
+[
+    {
+        "model": "configurations.service",
+        "pk": 1,
+        "fields": {
+            "nom": "A"
+        }
+    },
+    {
+        "model": "configurations.service",
+        "pk": 2,
+        "fields": {
+            "nom": "B"
+        }
+    },
+    {
+        "model": "configurations.service",
+        "pk": 3,
+        "fields": {
+            "nom": "C"
+        }
+    }
+]

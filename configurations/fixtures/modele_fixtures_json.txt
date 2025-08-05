@@ -1,0 +1,32 @@
+[
+    {
+        "model": "configurations.service",
+        "pk": 1,
+        "fields": {
+            "nom": "Petit",
+            "prenom": "Michel",
+            "date_naissance": "1973-09-11",
+            "date_embauche": "1993-05-29"
+        }
+    },
+    {
+        "model": "configurations.service",
+        "pk": 2,
+        "fields": {
+            "nom": "Durand",
+            "prenom": "David",
+            "date_naissance": null,
+            "date_embauche": null
+        }
+    },
+    {
+        "model": "configurations.service",
+        "pk": 3,
+        "fields": {
+            "nom": "Petit",
+            "prenom": "Laura",
+            "date_naissance": "1982-11-20",
+            "date_embauche": "2001-07-27"
+        }
+    }
+]

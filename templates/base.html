@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mon Projet{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <!-- Navbar principale toujours visible -->
+    <nav class="top-navbar">
+        <div class="nav-container">
+            <a href="{% if user.is_authenticated %}{% url 'pages:accueil' %}{% else %}/{% endif %}" class="logo">
+                <div class="logo-icon">MP</div>
+            </a>
+            
+            <div class="nav-right">
+                <a href="/admin/" class="admin-link">
+                    <span>⚙️</span>
+                    Admin
+                </a>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Changer le thème">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    {% if user.is_authenticated %}
+    <div class="container">
+        <nav class="secondary-navbar">
+            <a href="{% url 'pages:accueil' %}">🏠 Accueil</a>
+            <a href="{% url 'pages:pageA' %}">📄 Page A</a>
+            <a href="{% url 'pages:pageB' %}">📄 Page B</a>
+            <a href="{% url 'pages:pageC' %}">📄 Page C</a>
+            <a href="{% url 'pages:deconnexion' %}" class="logout-btn">🚪 Déconnexion</a>
+        </nav>
+        
+        <div class="content">
+            <h1>{% block header %}{% endblock %}</h1>
+            <p>Bienvenue, <strong>{{ user.username }}</strong> ! 👋</p>
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    {% else %}
+        {% block login_content %}{% endblock %}
+    {% endif %}
+
+    <script>
+		// Gestion du thème
+		function toggleTheme() {
+			const html = document.documentElement;
+			const themeIcon = document.getElementById('theme-icon');
+			const currentTheme = html.getAttribute('data-theme');
+
+			if (currentTheme === 'dark') {
+				html.setAttribute('data-theme', 'light');
+				themeIcon.textContent = '🌙';
+				localStorage.setItem('theme', 'light');
+			} else {
+				html.setAttribute('data-theme', 'dark');
+				themeIcon.textContent = '☀️';
+				localStorage.setItem('theme', 'dark');
+			}
+		}
+
+		// Charger le thème sauvegardé au démarrage
+		document.addEventListener('DOMContentLoaded', function () {
+			const savedTheme = localStorage.getItem('theme') || 'light';
+			const themeIcon = document.getElementById('theme-icon');
+
+			document.documentElement.setAttribute('data-theme', savedTheme);
+			themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+		});
+	</script>
+	</body>
+	
+	</html>

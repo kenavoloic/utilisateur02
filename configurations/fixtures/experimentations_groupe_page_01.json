@@ -1,0 +1,162 @@
+[
+  {
+    "model": "myapp.pagegroup",
+    "pk": 1,
+    "fields": {
+      "name": "Alpha",
+      "display_name": "Groupe Alpha",
+      "description": "Groupe pour les fonctionnalités de base",
+      "order": 1
+    }
+  },
+  {
+    "model": "myapp.pagegroup",
+    "pk": 2,
+    "fields": {
+      "name": "Beta",
+      "display_name": "Groupe Beta",
+      "description": "Groupe pour les fonctionnalités avancées",
+      "order": 2
+    }
+  },
+  {
+    "model": "myapp.pagegroup",
+    "pk": 3,
+    "fields": {
+      "name": "Gamma",
+      "display_name": "Groupe Gamma",
+      "description": "Groupe pour les fonctionnalités administratives",
+      "order": 3
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 1,
+    "fields": {
+      "name": "p1",
+      "display_name": "Dashboard",
+      "url_name": "pages:p1",
+      "group": 1,
+      "order": 1,
+      "is_active": true,
+      "icon_class": "fas fa-tachometer-alt"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 2,
+    "fields": {
+      "name": "p2",
+      "display_name": "Profil Utilisateur",
+      "url_name": "pages:p2",
+      "group": 1,
+      "order": 2,
+      "is_active": true,
+      "icon_class": "fas fa-user"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 3,
+    "fields": {
+      "name": "p3",
+      "display_name": "Paramètres",
+      "url_name": "pages:p3",
+      "group": 1,
+      "order": 3,
+      "is_active": true,
+      "icon_class": "fas fa-cog"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 4,
+    "fields": {
+      "name": "p4",
+      "display_name": "Gestion Projets",
+      "url_name": "pages:p4",
+      "group": 2,
+      "order": 1,
+      "is_active": true,
+      "icon_class": "fas fa-project-diagram"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 5,
+    "fields": {
+      "name": "p5",
+      "display_name": "Rapports",
+      "url_name": "pages:p5",
+      "group": 2,
+      "order": 2,
+      "is_active": true,
+      "icon_class": "fas fa-chart-bar"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 6,
+    "fields": {
+      "name": "p6",
+      "display_name": "Analytics",
+      "url_name": "pages:p6",
+      "group": 2,
+      "order": 3,
+      "is_active": true,
+      "icon_class": "fas fa-analytics"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 7,
+    "fields": {
+      "name": "p7",
+      "display_name": "Exports",
+      "url_name": "pages:p7",
+      "group": 2,
+      "order": 4,
+      "is_active": true,
+      "icon_class": "fas fa-download"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 8,
+    "fields": {
+      "name": "p8",
+      "display_name": "Administration",
+      "url_name": "pages:p8",
+      "group": 3,
+      "order": 1,
+      "is_active": true,
+      "icon_class": "fas fa-tools"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 9,
+    "fields": {
+      "name": "p9",
+      "display_name": "Gestion Utilisateurs",
+      "url_name": "pages:p9",
+      "group": 3,
+      "order": 2,
+      "is_active": true,
+      "icon_class": "fas fa-users-cog"
+    }
+  },
+  {
+    "model": "myapp.page",
+    "pk": 10,
+    "fields": {
+      "name": "p10",
+      "display_name": "Logs Système",
+      "url_name": "pages:p10",
+      "group": 3,
+      "order": 3,
+      "is_active": true,
+      "icon_class": "fas fa-file-alt"
+    }
+  }
+]

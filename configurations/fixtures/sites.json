@@ -1,0 +1,26 @@
+[
+    {
+        "model": "configurations.site",
+        "pk": 1,
+        "fields": {
+            "nom": "Bordeaux",
+	    "code_postal": "33000"
+        }
+    },
+    {
+        "model": "configurations.site",
+        "pk": 2,
+        "fields": {
+            "nom": "Libourne",
+	    "code_postal": "33500"
+        }
+    },
+    {
+        "model": "configurations.site",
+        "pk": 3,
+        "fields": {
+            "nom": "Arcachon",
+	    "code_postal": "33120"
+        }
+    }
+]

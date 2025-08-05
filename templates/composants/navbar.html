@@ -1,0 +1,17 @@
+<nav class="top-navbar">
+	<div class="nav-container">
+		<a href="{% if user.is_authenticated %}{% url 'pages:accueil' %}{% else %}/{% endif %}" class="logo">
+			<div class="logo-icon">MP</div>
+		</a>
+
+		<div class="nav-right">
+			<a href="/admin/" class="admin-link">
+				<span>⚙️</span>
+				Admin
+			</a>
+			<button class="theme-toggle" onclick="toggleTheme()" title="Changer le thème">
+				<span id="theme-icon">🌙</span>
+			</button>
+		</div>
+	</div>
+</nav>
