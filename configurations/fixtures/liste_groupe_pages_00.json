@@ -1,0 +1,32 @@
+[
+  {
+    "model": "configurations.GroupePage",
+    "pk": 1,
+    "fields": {
+      "nom": "g01",
+      "libelle": "grp_1",
+      "description": "GroupePage 1",
+      "ordre": 1      
+    }
+  },  
+  {
+    "model": "configurations.GroupePage",
+    "pk": 2,
+    "fields": {
+      "nom": "g02",
+      "libelle": "grp_2",
+      "description": "GroupePage 2",
+      "ordre": 2      
+    }
+  },
+  {
+    "model": "configurations.GroupePage",
+    "pk": 3,
+    "fields": {
+      "nom": "g03",
+      "libelle": "grp_3",
+      "description": "GroupePage 3",
+      "ordre": 3      
+    }
+  }  
+]

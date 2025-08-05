@@ -1,0 +1,194 @@
+[
+  {
+    "model": "configurations.page",
+    "pk": 1,
+    "fields": {
+      "nom": "p001",
+      "libelle": "un",
+      "nom_url": "pages:p001",
+      "groupe": 1,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 2,
+    "fields": {
+      "nom": "p002",
+      "libelle": "deux",
+      "nom_url": "pages:p002",
+      "groupe": 2,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 3,
+    "fields": {
+      "nom": "p003",
+      "libelle": "trois",
+      "nom_url": "pages:p003",
+      "groupe": 3,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 4,
+    "fields": {
+      "nom": "p004",
+      "libelle": "quatre",
+      "nom_url": "pages:p004",
+      "groupe": 1,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 5,
+    "fields": {
+      "nom": "p005",
+      "libelle": "cinq",
+      "nom_url": "pages:p005",
+      "groupe": 2,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 6,
+    "fields": {
+      "nom": "p006",
+      "libelle": "six",
+      "nom_url": "pages:p006",
+      "groupe": 3,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 7,
+    "fields": {
+      "nom": "p007",
+      "libelle": "sept",
+      "nom_url": "pages:p007",
+      "groupe": 1,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 8,
+    "fields": {
+      "nom": "p008",
+      "libelle": "huit",
+      "nom_url": "pages:p008",
+      "groupe": 2,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 9,
+    "fields": {
+      "nom": "p009",
+      "libelle": "neuf",
+      "nom_url": "pages:p009",
+      "groupe": 3,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 10,
+    "fields": {
+      "nom": "p010",
+      "libelle": "dix",
+      "nom_url": "pages:p010",
+      "groupe": 1,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 11,
+    "fields": {
+      "nom": "p011",
+      "libelle": "onze",
+      "nom_url": "pages:p011",
+      "groupe": 2,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 12,
+    "fields": {
+      "nom": "p012",
+      "libelle": "douze",
+      "nom_url": "pages:p012",
+      "groupe": 3,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 13,
+    "fields": {
+      "nom": "p013",
+      "libelle": "treize",
+      "nom_url": "pages:p013",
+      "groupe": 1,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 14,
+    "fields": {
+      "nom": "p014",
+      "libelle": "quatorze",
+      "nom_url": "pages:p014",
+      "groupe": 2,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 15,
+    "fields": {
+      "nom": "p015",
+      "libelle": "quinze",
+      "nom_url": "pages:p015",
+      "groupe": 3,
+      "ordre": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "configurations.page",
+    "pk": 16,
+    "fields": {
+      "nom": "p016",
+      "libelle": "seize",
+      "nom_url": "pages:p016",
+      "groupe": 1,
+      "ordre": 0,
+      "is_active": true
+    }
+  }
+]

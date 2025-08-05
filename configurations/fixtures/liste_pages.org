@@ -1,25 +1,26 @@
 
 
 #+NAME: liste
-| nom  | libelle  | nom_url    |
-|------+----------+------------|
-| p001 | un       | pages:p001 |
-| p002 | deux     | pages:p002 |
-| p003 | trois    | pages:p003 |
-| p004 | quatre   | pages:p004 |
-| p005 | cinq     | pages:p005 |
-| p006 | six      | pages:p006 |
-| p007 | sept     | pages:p007 |
-| p008 | huit     | pages:p008 |
-| p009 | neuf     | pages:p009 |
-| p010 | dix      | pages:p010 |
-| p011 | onze     | pages:p011 |
-| p012 | douze    | pages:p012 |
-| p013 | treize   | pages:p013 |
-| p014 | quatorze | pages:p014 |
-| p015 | quinze   | pages:p015 |
-| p016 | seize    | pages:p016 |
-|------+----------+------------|
+| nom  | libelle  | nom_url    | groupe | ordre | is_active |
+|------+----------+------------+--------+-------+-----------|
+| p001 | un       | pages:p001 |      1 |     0 | True      |
+| p002 | deux     | pages:p002 |      2 |     0 | True      |
+| p003 | trois    | pages:p003 |      3 |     0 | True      |
+| p004 | quatre   | pages:p004 |      1 |     0 | True      |
+| p005 | cinq     | pages:p005 |      2 |     0 | True      |
+| p006 | six      | pages:p006 |      3 |     0 | True      |
+| p007 | sept     | pages:p007 |      1 |     0 | True      |
+| p008 | huit     | pages:p008 |      2 |     0 | True      |
+| p009 | neuf     | pages:p009 |      3 |     0 | True      |
+| p010 | dix      | pages:p010 |      1 |     0 | True      |
+| p011 | onze     | pages:p011 |      2 |     0 | True      |
+| p012 | douze    | pages:p012 |      3 |     0 | True      |
+| p013 | treize   | pages:p013 |      1 |     0 | True      |
+| p014 | quatorze | pages:p014 |      2 |     0 | True      |
+| p015 | quinze   | pages:p015 |      3 |     0 | True      |
+| p016 | seize    | pages:p016 |      1 |     0 | True      |
+|------+----------+------------+--------+-------+-----------|
+#+TBLFM: $5=0::$6=True
 
 :PROPERTIES:
 :TABLE_EXPORT_FILE: test.csv
