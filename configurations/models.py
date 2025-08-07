@@ -151,7 +151,7 @@ class Page(models.Model):
     nom = models.CharField(max_length=50, unique=True)
     libelle = models.CharField(max_length=255)
     nom_url = models.CharField(max_length=100, help_text="Nom de l'URL Django")
-    groupe = models.ForeignKey(GroupePage, on_delete=models.CASCADE, related_name='pages')
+    groupe = models.ForeignKey(GroupePage, on_delete=models.CASCADE, related_name='pages_list')
     ordre = models.IntegerField(default=0, help_text="Ordre dans le groupe")
     is_active = models.BooleanField(default=True)
     #icon_class = models.CharField(max_length=50, blank=True, help_text="Classe CSS pour l'icône")
@@ -165,10 +165,54 @@ class Page(models.Model):
     def get_url(self):
         """Retourne l'URL de la page"""
         try:
-            return reverse(self.url_name)
+            return reverse(self.nom_url)
         except:
             return "#"
 
+class PageConfig(models.Model):
+    """Configuration des pages - PAS le contenu (qui reste dans les templates)"""
+    # name = models.CharField(max_length=100, unique=True)  # Identifiant technique
+    # display_name = models.CharField(max_length=200)       # Nom affiché dans la navbar
+    # group = models.ForeignKey(GroupePage, on_delete=models.CASCADE, related_name='pages')
+
+    nom = models.CharField(max_length=100, unique=True)  # Identifiant technique
+    libelle = models.CharField(max_length=200)       # Nom affiché dans la navbar
+    groupe = models.ForeignKey(GroupePage, on_delete=models.CASCADE, related_name='pages_config')
+    
+    # Routing
+    url_pattern = models.CharField(max_length=200)  # 'dashboard/', 'reports/sales/'
+    nom_template = models.CharField(max_length=200)  # 'pages/admin/dashboard.html'
+    
+    # Navigation
+    ordre = models.IntegerField(default=0)
+    is_active = models.BooleanField(default=True)
+    is_default = models.BooleanField(default=False)  # Page par défaut du groupe
+    show_in_navbar = models.BooleanField(default=True)
+    
+    # Métadonnées (pour le <head> HTML)
+    titre_page = models.CharField(max_length=200, blank=True)
+    #meta_description = models.CharField(max_length=300, blank=True)
+    
+    # Permissions étendues (optionnel)
+    #require_ssl = models.BooleanField(default=False)
+    #cache_timeout = models.IntegerField(default=300)  # 5 minutes par défaut
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        ordering = ['groupe', 'ordre', 'nom']
+        unique_together = [['groupe', 'ordre']]
+    
+    def __str__(self):
+        return f"{self.groupe.nom} - {self.libelle}"
+    
+    def get_titre_complet(self):
+        """Titre complet pour le <title>"""
+        if self.titre_page:
+            return f"{self.titre_page} | Mon App"
+        return f"{self.libelle} | Mon App"
+    
 class AssociationUtilisateurGroupe(models.Model):
     """Association entre utilisateurs et groupes de pages"""
     user = models.ForeignKey(User, on_delete=models.CASCADE)
